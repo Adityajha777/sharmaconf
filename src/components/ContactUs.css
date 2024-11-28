@@ -1,0 +1,72 @@
+.contact-us {
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    color: black; 
+    position: relative; 
+}
+
+.contact-us::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); 
+    z-index: 1; 
+}
+
+.contact-us h2,
+.contact-us label,
+.contact-us textarea,
+.contact-us button {
+    position: relative; 
+    z-index: 2; 
+    margin: 10px 0; 
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 100%; 
+    border-radius: 5px; 
+    border: 1px solid black; 
+    padding: 10px; 
+}
+
+.contact-us button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.contact-us button:hover {
+    background-color: #45a049; 
+}
+
+.about-us {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.9); /* Optional: Add a background to the About Us section */
+}
+
+.about-us h2 {
+    text-align: left;
+    color: #333;
+}
+
+.about-us p {
+    line-height: 1.5;
+    color: #555;
+}
